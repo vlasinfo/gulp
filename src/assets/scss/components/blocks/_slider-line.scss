@@ -1,0 +1,26 @@
+.slider-line {
+  width: 100%;
+  background-color: var(--color-dark);
+  overflow: hidden;
+  min-height: 51px;
+
+  &__slide {
+    text-align: center;
+    width: 100%;
+  }
+
+  &__link {
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+    white-space: no;
+    
+    &:hover {
+      color: var(--color-accent);
+    }
+  }
+
+}

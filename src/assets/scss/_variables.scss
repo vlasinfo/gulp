@@ -1,0 +1,26 @@
+@use 'helpers' as *;
+
+:root {
+  --font-family-base: "Akzidenz Grotesk", sans-serif;
+  --font-family-accent: "Chronicle Display", serif;
+
+  --container-width: 1320px;
+  --container-width-big: 2104px;
+
+  --container-padding-xy: 16px;
+  --transition-duration: .2s;
+
+  --color-overlay: rgba(0, 0, 0, .2);
+
+  --color-dark: #000; 
+  --color-lighter: #545454;
+  --color-border: #e5e5e5;
+  --color-border2: #f5f5f5;
+  --color-lighter2: rgba(253, 251, 250, .2);
+  --color-accent: #DAA520;
+  --color-accent2: #F5F0EA; 
+
+  --cubic: cubic-bezier(0.42, 0.0, 0.58, 1.0)
+} 
+
+ 

@@ -1,0 +1,44 @@
+
+$site-width: 1922px;
+$container-width: 1422px;
+$mobile: 639px;
+$mobile-s: 480.98px;
+// used
+$laptop: 991px;
+$tablet: 766px;
+
+@mixin site-width {
+  @media (max-width: $site-width) {
+    @content;
+  }
+}
+
+@mixin container-width {
+  @media (max-width: $container-width) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (max-width: $laptop) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin mobile-s {
+  @media (max-width: $mobile-s) {
+    @content;
+  }
+}

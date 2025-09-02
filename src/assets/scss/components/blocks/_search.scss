@@ -1,0 +1,83 @@
+@use 'helpers' as *;
+.search-modal {
+  position: fixed;
+  top: 0;
+  padding-top: 50px;
+  width: 100%;
+  @include hide;
+  transition: all var(--transition-duration) ease-in;
+
+  &__form {
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    transform: translateY(-20px);
+    transition: all var(--transition-duration) ease-in;
+  }
+
+  &__input {
+    background: var(--color-accent2);
+    border: 0;
+    width: 100%;
+    padding: 15px;
+    transition: none;
+    border-radius: 2px;
+
+    &:focus,
+    &:focus-within {
+      outline: 2px solid var(--color-dark);
+      outline-offset: 0px;
+    }
+  }
+
+  &__button-close {
+    position: absolute;
+    right: 12px;
+    top: 15px;
+
+    svg {
+      display: block;
+    }
+
+    &:hover {
+      svg path {
+        stroke: var(--color-accent);
+      }
+
+    }
+  }
+
+  &__overlay {
+    position: fixed;
+    z-index: 98;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    transition: all 0.2s ease-in;
+
+    &:before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-color: #fff;
+      z-index: 990;
+    }
+  }
+}
+
+.search-modal-open {
+  .search-modal {
+    @include show;
+    height: 100%;
+    z-index: 9999;
+  }
+  .search-modal__form {
+    transform: translateY(0px);
+    transition: all var(--transition-duration) ease-out;
+   }
+}

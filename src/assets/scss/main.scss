@@ -1,0 +1,19 @@
+@use 'normalize';
+@use 'fonts';
+@use 'variables';
+@use 'utils';
+@use 'globals';
+
+// Layout
+@use 'components/layout/header';
+@use 'components/layout/footer';
+
+// UI
+@use 'components/blocks/navigation';
+@use 'components/blocks/search';
+@use 'components/blocks/cart';
+@use 'components/blocks/slider-line';
+
+// Sections
+@use 'components/sections/sections';  
+@use 'components/sections/hero';
